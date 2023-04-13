@@ -6,7 +6,10 @@ I wanted to develop the program I want with as much help as I could from GPT. On
 have the AI do the work for me. 
 
 ### Looking Back
-To be determined
+- Lots of work to do here..
+- The images are stretched to fit the grid so ALL players must have the same picture sizes. 
+- I need to verify what video formats are playable because every test has failed. 
+- I would like to remove the text for player name and add player. The player name will be photoshopped or super imposed on the player image. 
 
 --------------------
 
