@@ -8,18 +8,19 @@ class TournamentGUI:
     def __init__(self, master):
         self.master = master
         self.master.title("Video Game Tournament")
+        self.master.geometry("1200x800")
 
         # Set up the main frame and grid
         main_frame = tk.Frame(self.master)
-        main_frame.grid(column=0, row=0, sticky="nsew")
+        main_frame.pack(fill="both", expand=True)
 
         # Create three vertical frames to display images or videos
-        left_frame = tk.Frame(main_frame)
-        left_frame.grid(column=0, row=0, padx=10, pady=10, sticky="nsew")
-        center_frame = tk.Frame(main_frame)
-        center_frame.grid(column=1, row=0, padx=10, pady=10, sticky="nsew")
-        right_frame = tk.Frame(main_frame)
-        right_frame.grid(column=2, row=0, padx=10, pady=10, sticky="nsew")
+        left_frame = tk.Frame(main_frame, bg="black")
+        left_frame.pack(side="left", fill="both", expand=True)
+        center_frame = tk.Frame(main_frame, bg="black")
+        center_frame.pack(side="left", fill="both", expand=True)
+        right_frame = tk.Frame(main_frame, bg="black")
+        right_frame.pack(side="left", fill="both", expand=True)
 
         # Set up the three vertical frames
         self.create_vertical_frame(left_frame)
@@ -27,23 +28,17 @@ class TournamentGUI:
         self.create_vertical_frame(right_frame)
 
     def create_vertical_frame(self, frame):
-        # Set up the vertical frame
-        frame.columnconfigure(0, weight=1)
-        frame.rowconfigure(0, weight=1)
-        frame.rowconfigure(1, weight=1)
-        frame.rowconfigure(2, weight=1)
-
         # Add a button to add player image or video
         add_player_button = ttk.Button(frame, text="Add Player", command=lambda: self.add_player(frame))
-        add_player_button.grid(column=0, row=0, sticky="nsew", padx=5, pady=5)
+        add_player_button.pack(side="top", padx=5, pady=5)
 
         # Add a canvas to display the image or video
         canvas = tk.Canvas(frame, bg="black")
-        canvas.grid(column=0, row=1, sticky="nsew", padx=5, pady=5)
+        canvas.pack(fill="both", expand=True)
 
         # Add a label to display the player name
         player_name_label = tk.Label(frame, text="Player Name", font=("Arial", 12))
-        player_name_label.grid(column=0, row=2, sticky="nsew", padx=5, pady=5)
+        player_name_label.pack(side="bottom", padx=5, pady=5)
 
     def add_player(self, frame):
         # Open a file dialog to choose the player image or video
@@ -52,7 +47,7 @@ class TournamentGUI:
         # Display the player image or video on the canvas
         if file_path:
             player_image = Image.open(file_path)
-            player_image = player_image.resize((200, 300))
+            player_image = player_image.resize((int(frame.winfo_width()), int(frame.winfo_height()-50)))
             player_image = ImageTk.PhotoImage(player_image)
             canvas = frame.winfo_children()[1]
             canvas.delete("all")
