@@ -7,8 +7,32 @@ The `HelloWorldWithRolePrompt/` directory contains simplistic examples demonstra
 ### Contents
 
 - `hello_world_python.py`: A Python version of "Hello, World!" with role-prompting.
+
+   - In this file, the role-prompt is asking for a "Hello, World!" program that is memory-efficient and easy for beginners to understand.
+   - The code following the role-prompt is a suggestion from GitHub Copilot based on the prompt.
+   - The program defines a main() function, which is a standard approach in many programming languages and helps new programmers understand the flow of programs.
+   - The message "Hello, World!" is stored in a variable before it's printed, which introduces the concept of variables to new learners.
+   - Lastly, the if __name__ == "__main__": block is used to only execute the code if the script is run as the main module, a common practice in Python scripts that's useful for new learners to see early on.
+   - Please note that this script and the role-prompt are hypothetical and serve as an example of how one might structure such a file and the type of code GitHub Copilot might suggest in response to the prompt.
+   - The actual responses from GitHub Copilot can vary based on the specific prompt and context.
+
 - `hello_world_javascript.js`: A JavaScript iteration of "Hello, World!" influenced by role-prompting.
+   - In this hypothetical hello_world_javascript.js file, the role-prompt is asking for a "Hello, World!" program in JavaScript that is beginner-friendly and demonstrates best practices for function structure.
+   - The code following the role-prompt represents a suggestion from GitHub Copilot based on the prompt's specifics.
+   - Here, the "Hello, World!" program is encapsulated within a main function, which isn't necessary in a simple JavaScript program but serves as an instructional demonstration of function structure for beginners.
+   - The script uses const for variable declaration to introduce new programmers to the concept of immutability (since the message isn't going to change).
+   - The program then logs the message to the console, which is a standard operation in JavaScript.
+   - Lastly, the script calls main() to execute the function, teaching beginners how functions are invoked in JavaScript.
+   - This script and the role-prompt are examples and are meant to illustrate how one might construct such a file and the type of code GitHub Copilot might generate in response to the prompt. Real responses from GitHub Copilot can vary based on the specific prompt and context given.
+   
 - `hello_world_ruby.rb`: "Hello, World!" in Ruby, showcasing role-prompt guidance.
+   - In this file, the role-prompt specifies that the "Hello, World!" program should adhere to the Ruby style guide and be suitable for beginners.
+   - The code provided after the role-prompt is a hypothetical response from GitHub Copilot based on the role-prompt.
+   - This script defines a main method, a practice that's not required in Ruby but helps in organizing code logically, which can be beneficial for beginners to learn.
+   - The "Hello, World!" message is stored in a local variable named message, demonstrating the use of variables in Ruby.
+   - The puts method is then used to print the message variable to the console, a common practice in Ruby for displaying output.
+   - The script concludes by calling the main method to execute the program, which helps new programmers understand the execution flow of a Ruby script.
+
 - `README.md`: The file you're currently reading.
 
 ## Logic and Goals
