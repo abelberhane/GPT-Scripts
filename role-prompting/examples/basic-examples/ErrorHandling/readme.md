@@ -8,7 +8,6 @@ The `ErrorHandling/` directory is an instructional resource aimed at leveraging 
 
 - `error_handling_python.py`: Demonstrates Python's rich error handling with prompts that emphasize comprehensive catch blocks and custom exceptions.
 - `error_handling_javascript.js`: Showcases JavaScript error resilience using prompts for classic `try/catch/finally` constructs, promise error handling, and error propagation.
-- `error_handling_ruby.rb`: Illustrates Ruby's elegant error management in response to prompts for `begin/rescue/ensure/end` blocks and custom error signaling.
 - `README.md`: This document, explaining the concept, utility, and instructions for maximizing the benefit from role-prompt driven error handling examples.
 
 ## Role-Prompting for Enhanced Error Handling
