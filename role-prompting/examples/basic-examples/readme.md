@@ -10,7 +10,6 @@ Whether you're new to GitHub Copilot or are an experienced developer curious abo
 
 - `HelloWorldWithRolePrompt/`: Discover how role-prompting affects a simple "Hello, World!" program in various programming languages.
 - `DataManipulation/`: Basic examples of data manipulation scripts, illustrating how different role-prompts can lead to different approaches in handling data.
-- `ControlStructures/`: Examples focusing on loops, conditionals, and other control structures, showing how role-prompts can alter the logic presented by GitHub Copilot.
 - `ErrorHandling/`: See how role-prompting can influence the way GitHub Copilot suggests error-handling mechanisms.
 - `README.md`: The file you're currently reading, which provides an overview and guidance on how to use the basic examples.
 
